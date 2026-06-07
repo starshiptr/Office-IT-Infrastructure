@@ -1,8 +1,9 @@
-# Windows Server 2022 + RDS Infrastructure — Case Study
+# Office IT Infrastructure — Bare-Metal Servers, Network & Windows Server/RDS
 
 A documented case study of a production IT environment I designed and built
-from bare metal for a 15+ engineer aerospace startup: centralized identity,
-multi-user compute, and secure remote access.
+from the ground up for a 15+ engineer aerospace startup: the bare-metal
+servers, the entire office network, centralized identity, multi-user compute,
+and secure remote access — owned end to end.
 
 > This is an architecture & decisions writeup. No employer data, credentials,
 > IPs, hostnames, or proprietary configuration is included. Shared with
@@ -13,13 +14,17 @@ A growing engineering team on per-seat workstations: rising hardware cost,
 inconsistent environments, no central identity, ad-hoc remote access.
 
 ## What I built
-- **Bare-metal Windows Server 2022** — provisioned from scratch
-- **Active Directory + Group Policy** — centralized identity, access control,
-  and standardized machine policy
-- **Remote Desktop Services (RDS)** — multi-user environment replacing
-  per-seat workstations for CAD/simulation/office workloads
-- **Network rack, 2 servers, Layer 2/3** — the physical + logical backbone
-- **VPN remote access** — secure connectivity for distributed engineers
+- **Bare-metal server infrastructure** — provisioned and configured 2 physical
+  servers from scratch (hardware → OS → roles), plus 2 high-performance CAD
+  workstations. Full ownership of the physical layer.
+- **Office network backbone** — designed and built the complete network for the
+  whole office (15+ engineers): network rack, structured cabling, Layer 2/3
+  switching and routing. The physical + logical foundation everything else runs on.
+- **Windows Server 2022 + Active Directory + Group Policy** — centralized
+  identity, access control, and standardized machine policy, built from scratch.
+- **Remote Desktop Services (RDS)** — multi-user environment replacing per-seat
+  workstations for CAD/simulation/office workloads.
+- **VPN remote access** — secure connectivity for the distributed team.
 
 ## Outcome
 - **~40% reduction in hardware spend** by consolidating workstations onto
@@ -37,5 +42,6 @@ inconsistent environments, no central identity, ad-hoc remote access.
 - Owning infrastructure end-to-end: procurement → build → run → support
 
 ## Skills demonstrated
-Windows Server · Active Directory · Group Policy · RDS · VPN ·
+Bare-metal server builds · network design & cabling · Layer 2/3 switching &
+routing · Windows Server · Active Directory · Group Policy · RDS · VPN ·
 network infrastructure · IT procurement · systems administration
