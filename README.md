@@ -35,6 +35,13 @@ inconsistent environments, no central identity, ad-hoc remote access.
 ## Architecture (sanitized)
 ![diagram](docs/architecture.png)
 
+## Chapters
+- [**From local accounts to Zero Trust**](ad-zero-trust/) *(July 2026)* —
+  rebuild of the RDS environment under Active Directory: AGDLP least-privilege
+  permissions, GPO baseline, in-place user migration, PowerShell onboarding
+  automation, and Cloudflare Zero Trust (tunnel + WARP + Entra ID SSO/MFA)
+  replacing the shared-credential VPN.
+
 ## What I learned
 - Designing AD/GPO structure for a small but growing org
 - RDS sizing, licensing, and session management trade-offs
